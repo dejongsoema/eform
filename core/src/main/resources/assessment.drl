@@ -1,0 +1,10 @@
+package com.wordpress.marianbuenosayres;
+
+rule "Assessment Point"
+no-loop
+ruleflow-group "assign-assessment-points"
+when
+	req: String(length > 1)
+then
+	insert(new Integer(1));
+end
